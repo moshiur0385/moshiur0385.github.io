@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Md Moshiur Rahman Rana – Portfolio</title>
+<meta name="description" content="Portfolio of Md Moshiur Rahman Rana, Social Work student and data entry specialist.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--tint:#fff7f6;--surface:#fff;--ink:#2b3550;--head:#052c5c;--muted:#5c6680;--line:#f1dedc;--accent:#ee5b55;--accent-ink:#fff;--soft:#fde3e1;--foot:#052c5c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1428;--tint:#0f1a33;--surface:#14203d;--ink:#dfe5f5;--head:#f1f4fc;--muted:#a1acc8;--line:#25335a;--soft:#3a2630;--foot:#070e1d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1428;--tint:#0f1a33;--surface:#14203d;--ink:#dfe5f5;--head:#f1f4fc;--muted:#a1acc8;--line:#25335a;--soft:#3a2630;--foot:#070e1d;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Open Sans","Segoe UI",system-ui,sans-serif}
+h1,h2,h3,.serif{font-family:"Playfair Display",Georgia,serif;color:var(--head)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:10;background:var(--tint);padding-top:env(safe-area-inset-top,0px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:68px}
+.logo{width:34px;height:34px;border-radius:50%;background:conic-gradient(from 200deg,var(--accent),#ff9a8f,var(--head),var(--accent));flex:none}
+.menu{display:flex;gap:26px;align-items:center;overflow-x:auto}
+.menu a{color:var(--ink);text-decoration:none;font-size:.95rem;white-space:nowrap}
+.menu a:hover{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:10px 22px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.95rem;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.08)}
+.mode{background:none;border:1px solid var(--line);color:var(--head);border-radius:6px;width:36px;height:36px;cursor:pointer;flex:none}
+.hero{background:var(--tint);padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+.hero .in{animation:rise .7s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero .in{animation:none}}
+h1{font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.12;margin:0 0 16px;font-weight:700}
+.lead{color:var(--muted);max-width:32em;margin:0 0 28px}
+.pic{position:relative;justify-self:center;width:min(320px,80vw)}
+.pic::before{content:"";position:absolute;inset:26px -22px -22px 22px;background:var(--accent);border-radius:14px}
+.pic img{position:relative;display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 15%;border-radius:14px;background:#dfe7f7}
+@media (max-width:780px){.hero .wrap{grid-template-columns:1fr}.pic{order:-1;margin-bottom:22px}}
+section{padding:72px 0}
+section.alt{background:var(--tint)}
+.head{text-align:center;margin-bottom:38px}
+.head h2{font-size:2rem;margin:0 0 8px;font-weight:700}
+.head p{margin:0;color:var(--muted)}
+.head::after{content:"";display:block;width:64px;height:2px;background:var(--accent);margin:16px auto 0}
+.card{background:var(--surface);border-radius:10px;padding:24px;box-shadow:0 6px 24px #0f1b3d14}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.about{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.about h3{font-size:1.5rem;margin:0 0 12px;line-height:1.3}
+.about h3::after{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-top:12px}
+.about .pic{width:min(300px,78vw)}
+@media (max-width:780px){.about{grid-template-columns:1fr}}
+.svc{text-align:center}
+.ico{width:48px;height:48px;border-radius:50%;background:var(--soft);display:grid;place-items:center;margin:0 auto 12px;font-size:1.3rem}
+.svc h3,.item h3{font-size:1.1rem;margin:0 0 8px}
+.svc p{margin:0;color:var(--muted);font-size:.95rem}
+.when{color:var(--accent);font-weight:600;font-size:.92rem;margin:0 0 8px}
+.item p{margin:0;color:var(--muted)}
+.item ul{margin:6px 0 0;padding-left:20px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:0;padding:0;list-style:none}
+.chips li{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font-size:.95rem}
+.sk{margin-top:30px}.sk h3{text-align:center;font-size:1.05rem;margin:0 0 12px}
+.con a,.con div{display:block;text-decoration:none;color:var(--ink)}
+.con small{color:var(--muted);display:block}
+.con strong{overflow-wrap:anywhere}
+.con .card:hover{outline:2px solid var(--accent)}
+footer{background:var(--foot);color:#fff;padding:40px 0 22px}
+footer .row{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid #ffffff26}
+footer .serif{color:#fff;font-size:1.1rem;overflow-wrap:anywhere}
+footer p{text-align:center;margin:18px 0 0;font-size:.85rem;color:#c3cde6}
+</style>
+</head>
+<body>
+<script>
+/* ============================================================
+   EDIT ONLY THIS BLOCK. Change the text inside the quotes "..."
+   Don't delete quotes, commas, [ ] or { }.
+   To change photo: replace the file photo.jpg with a new photo.
+   ============================================================ */
+const SITE = {
+  name: "Md Moshiur Rahman Rana",
+  heroTitle: "Hi, I'm Moshiur, a Social Work student and data entry specialist",
+  tagline: "Hardworking, honest and quick to learn. I look for part-time work where accuracy and a friendly attitude matter.",
+  photo: "photo.jpg",
+  aboutTitle: "Accurate work, friendly service",
+  about: [
+    "I am studying B.S.S (Hons) in Social Work at Dhaka Central University.",
+    "I have hands-on experience in professional data entry, and I keep my work accurate and confidential. I work well in a team and I care about the quality of the service I give."
+  ],
+  services: [
+    { icon: "⌨️", title: "Data Entry", text: "Fast and accurate data entry, online and offline." },
+    { icon: "📊", title: "Excel & Data Cleaning", text: "Formulas, formatting and cleaning messy data in Excel and Google Sheets." },
+    { icon: "📄", title: "Document Conversion", text: "PDF to Excel or Word conversion, and data collection and formatting." }
+  ],
+  education: [
+    { when: "2024 – Ongoing", title: "Dhaka Central University", detail: "B.S.S (Hons) in Social Work, 2nd year" },
+    { when: "2021 – 2022",    title: "Govt. Ashek Mahmud College, Jamalpur", detail: "H.S.C (Humanities), GPA 3.83" },
+    { when: "2019 – 2020",    title: "Hazera Muksed High School, Jamalpur", detail: "S.S.C (Science), GPA 5.00" }
+  ],
+  experience: [
+    { when: "2024 – 2025", title: "Data Entry Expert, Progati IT", points: [
+      "Did professional data entry work on real-world projects.",
+      "Got hands-on training while working with live data.",
+      "Kept high accuracy and protected confidential information."
+    ]}
+  ],
+  skills: {
+    "Technical skills": ["Data entry", "MS Excel", "MS Word", "Google Docs", "Google Sheets", "Web research", "Fast typing"],
+    "Personal skills": ["Time management", "Quick learner", "Responsible & honest", "Communication", "Teamwork"],
+    "Languages": ["Bangla (native)", "Hindi (conversational)", "English (basic)"]
+  },
+  contact: [
+    { label: "Phone", value: "01560060385", href: "tel:+8801560060385" },
+    { label: "Email", value: "moshiurrana009@gmail.com", href: "mailto:moshiurrana009@gmail.com" },
+    { label: "Address", value: "Baishakhi Saroni, Middle Badda, Dhaka", href: "" }
+    /* Add more: { label: "Facebook", value: "My profile", href: "https://facebook.com/..." }, */
+  ]
+};
+/* ===================== END OF EDIT BLOCK ===================== */
+</script>
+
+<div class="nav"><div class="wrap">
+  <span class="logo" aria-hidden="true"></span>
+  <nav class="menu" aria-label="Sections"><a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav>
+  <span style="display:flex;gap:8px;align-items:center"><button class="mode" id="mode" type="button" aria-label="Switch light or dark mode">◐</button><a class="btn" href="#contact" id="hire">Hire Me</a></span>
+</div></div>
+
+<header class="hero" id="home"><div class="wrap">
+  <div class="in"><h1 id="h1"></h1><p class="lead" id="lead"></p><a class="btn" href="#about">Learn more</a></div>
+  <div class="pic in"><img id="photo" alt="Portrait of Md Moshiur Rahman Rana" width="320" height="400"></div>
+</div></header>
+
+<section id="about"><div class="wrap">
+  <div class="head"><h2>About Me</h2><p>A short introduction</p></div>
+  <div class="about"><div><h3 id="at"></h3><div id="ap"></div><p><a class="btn" href="#contact">Contact Me</a></p></div>
+  <div class="pic"><img id="photo2" alt="" width="300" height="375"></div></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+  <div class="head"><h2>What I Can Do</h2><p>Work I do with care</p></div>
+  <div class="grid" id="svc"></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="head"><h2>Education</h2><p>Where I studied</p></div>
+  <div class="grid" id="edu"></div>
+</div></section>
+
+<section class="alt" id="experience"><div class="wrap">
+  <div class="head"><h2>Work Experience</h2><p>Where I worked</p></div>
+  <div class="grid" id="exp"></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="head"><h2>My Skills</h2><p>Technical and personal</p></div>
+  <div id="skl"></div>
+</div></section>
+
+<section class="alt" id="contact"><div class="wrap">
+  <div class="head"><h2>Stay In Touch</h2><p>Tap to call or send an email</p></div>
+  <div class="grid con" id="con"></div>
+</div></section>
+
+<footer><div class="wrap"><div class="row"><span class="logo" aria-hidden="true"></span><span class="serif" id="fmail"></span></div><p id="foot"></p></div></footer>
+
+<script>
+(function(){
+  function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+  function $(i){return document.getElementById(i)}
+  var S=SITE;
+  document.title=S.name+" – Portfolio";
+  $("h1").textContent=S.heroTitle;$("lead").textContent=S.tagline;
+  $("photo").src=S.photo;$("photo2").src=S.photo;
+  $("at").textContent=S.aboutTitle;
+  S.about.forEach(function(p){$("ap").appendChild(el("p",null,p))});
+  S.services.forEach(function(s){var c=el("div","card svc");c.appendChild(el("div","ico",s.icon));c.appendChild(el("h3",null,s.title));c.appendChild(el("p",null,s.text));$("svc").appendChild(c)});
+  S.education.forEach(function(e){var c=el("div","card item");c.appendChild(el("h3",null,e.title));c.appendChild(el("p","when",e.when));c.appendChild(el("p",null,e.detail));$("edu").appendChild(c)});
+  S.experience.forEach(function(e){var c=el("div","card item");c.appendChild(el("h3",null,e.title));c.appendChild(el("p","when",e.when));var u=el("ul");e.points.forEach(function(p){u.appendChild(el("li",null,p))});c.appendChild(u);$("exp").appendChild(c)});
+  Object.keys(S.skills).forEach(function(k){var d=el("div","sk");d.appendChild(el("h3",null,k));var u=el("ul","chips");S.skills[k].forEach(function(s){u.appendChild(el("li",null,s))});d.appendChild(u);$("skl").appendChild(d)});
+  var mail="";
+  S.contact.forEach(function(x){var a=el(x.href?"a":"div");if(x.href)a.href=x.href;var c=el("div","card");c.appendChild(el("small",null,x.label));c.appendChild(el("strong",null,x.value));a.appendChild(c);$("con").appendChild(a);if(x.label==="Email")mail=x.value});
+  $("fmail").textContent=mail;
+  $("foot").textContent="Copyright © "+new Date().getFullYear()+" "+S.name;
+  var r=document.documentElement;
+  try{var t=localStorage.getItem("theme");if(t)r.setAttribute("data-theme",t)}catch(e){}
+  $("mode").addEventListener("click",function(){var d=r.getAttribute("data-theme")==="dark"||(!r.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme:dark)").matches);var n=d?"light":"dark";r.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}});
+})();
+</script>
+</body>
+</html>
